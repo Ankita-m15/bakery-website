@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      header {
+        background-color:white;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "logo menu icons";
+        padding: 60px 100px;
+        align-items: center;
+        color: lavender;
+       
+      }
+      a{
+        text-decoration: none;
+      }
+      .logo {
+        grid-area: logo;
+      }
+      .logo img {
+        height: 80px;
+        width: auto;
+      }
+      .menu ul {
+        display: flex;
+        list-style: none;
+
+        font-size: 30px;
+        gap: 30px;
+        color: rgb(219, 147, 191);
+      }
+      .icons {
+        font-size: 30px;
+        text-align: right;
+        color: rgb(219, 147, 191);
+        grid-area: icons;
+      }
+      .menu {
+        grid-area: menu;
+      }
+
+      .d-group img {
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        border-radius: 20px;
+      }
+      section {
+        gap: 50px;
+        margin: auto;
+      }
+
+      .d-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        font-size: 40px;
+        color: #a9802a;
+      }
+      .container {
+        max-width: 80%;
+        margin: auto;
+        padding: 40px;
+      }
+      .a-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+        font-size: 40px;
+        color: #a9802a;
+      }
+      .a-group h4 {
+        color: #1c1b54;
+      }
+      .c-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+        font-size: 40;
+        color: #a9802a;
+        padding: 11px;
+      }
+      .c-group img {
+        width: 60%;
+        max-height: 400px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        margin: auto;
+        border-radius: 20px;
+      }
+      h1 {
+        font-size: 60px;
+        color: #a9802a;
+        text-align: center;
+        gap: 40px;
+        padding: 40px;
+        margin-bottom: 40px;
+      }
+      footer {
+        background-color: #b0dcd1;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        padding: 60px 100px;
+        align-items: center;
+        color: lavender;
+        font-size: 25px;
+      }
+      footer img{
+        width: 80%;
+      }
+      .aboutus {
+        font-size: 23px;
+        color:#1c1b54 ;
+      }
+      ul {
+        list-style: none;
+      }
+      .b-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 40px;
+        color: #1c1b54;
+        align-items: center;
+        gap: 20px;
+      }
+      .b-group img {
+        max-height: 90%;
+        width: 100%;
+      }
+      .banner {
+       position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutus1{
+  position: absolute;
+    text-align: center;
+    gap: 20px;
+    top: -241px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+      
+      h2 {
+        font-size: 35px;
+        text-align: center;
+      }
+      .container{
+        background-color:white;
+      }
+      .item{
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 20px;
+        color: #1c1b54;
+      }
+      .a-group li {
+        margin-bottom: 20px;
+      }
+      button {
+        border-radius: 20px;
+        background-color: #f4bcb4;
+        color: #a9802a;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+      }
+      .aboutus ul li {
+        gap: 30px;
+      }
+      .c-group h2 {
+        margin-bottom: 20px;
+      }
+      .a-group h2 {
+        margin-bottom: 20px;
+      }
+      button:checked {
+        background-color: #b0dcd1;
+      }
+      .d-group p {
+        margin-bottom: 20px;
+      }
+      .item:hover > img {
+        transform: scale(0.9);
+      }
+      body {
+       background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bodys{
+       background-color:white; 
+      }
+      .member{
+        background-color: #fef6e1;
+        padding: 78px;
+      }
+      .aboutus h1{
+        padding-bottom: 20px;
+      }
+      .order{
+           position: relative;
+    overflow: hidden;
+
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .class{
+        position: absolute;
+    text-align: center;
+    gap: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      }
+      .class h3{
+        margin-bottom: 20px;
+       color: #a9802a;
+       font-size: 30px;
+      }
+      .img1 img{
+        text-align: left;
+      }
+      .class{
+         text-align: center;
+        gap: 40px;
+      }
+      .class p{
+        margin-bottom: 10px;
+      }
+      .w i {
+        font-size: 30px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+      }
+      @media(max-width:520px){
+        .menu{
+            display: none;
+        }
+         header {
+          grid-template-areas: "menu logo icons";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <br><hr>
+    <header>
+      <div class="logo">
+        <a href="home.html"><img
+          src="assets/images/logo/theo-logo-footer_8aecafbf-62c0-4aaf-84c1-194a7f79958a.webp"
+          alt=""
+        /></a>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="1bakery.html">PRODUCTS</a></li>
+            <li><a href="Bakery.html">ABOUT US</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <hr>
+    
+   <div class="bodys">
+     <section class="banner">
+      <div>
+        <img src="assets/images/banner/aboutpage-header.jpg" alt="" width="100%">
+      </div>
+    <div class="aboutus1">
+      <h1>ABOUT US</h1>
+    </div>  
+    </section>
+
+   
+    
+    <section class="container">
+      <h1>OUR PROMISE</h1>
+      <div class="a-group">
+        <div>
+          <i class="fa-solid fa-cake-candles"></i>
+          <h2>AUTHENTIC RECIPES</h2>
+          <h4>
+            Our products are based on traditional home-style recipes, using
+            fresh ingredients.
+          </h4>
+        </div>
+        <div>
+          <i class="fa-solid fa-heart"></i>
+          <h2>BAKED WITH LOVE</h2>
+          <h4>
+            Our passion for baking is poured into every recipe, serving smiles
+            on a plate everyday.
+          </h4>
+        </div>
+        <div>
+          <i class="fa-solid fa-book-open"></i>
+          <h2>HONESTLY PRICED</h2>
+          <h4>
+            We constantly strive to offer the best products at the right prices.
+          </h4>
+        </div>
+        <div>
+          <i class="fa-solid fa-face-smile-beam"></i>
+          <h2>COMMITTED TO QUALITY</h2>
+          <h4>
+            From our ingredients to our kitchen operations & guest services, we
+            always prioritize quality.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+   </div>
+   <section class="member">
+      <h1>OUR TEAM</h1>
+      <div class="c-group">
+        <div>
+          <img
+            src="assets/images/member/WhatsApp Image 2025-08-24 at 13.46.23.jpeg"
+            alt=""
+          />
+          <h2>RISHI GOUR</h2>
+          <h4>Chief Executive Officer</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/member/WhatsApp Image 2025-08-24 at 13.39.04.jpeg"
+            alt=""
+          />
+          <h2>TINA SETHI</h2>
+          <h4>Chief Marketing Officer</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/member/WhatsApp Image 2025-08-24 at 13.48.20.jpeg"
+            alt=""
+          />
+          <h2>SIMANTINI BUDUKH</h2>
+          <h4>Head – Production, Product Development & Innovation</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/member/WhatsApp Image 2025-08-24 at 13.44.16.jpeg"
+            alt=""
+          />
+          <h2>GEETA A SUNDRANI</h2>
+          <h4>Chief Human Resources Officer</h4>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div>
+        <img src="assets/images/logo/Likeourprod-theo-new1.webp" alt="" width="100%">
+      </div>
+      <div class="class">
+        <h3>Like our products?</h3>
+        <p>Treat yourself to your favourite 
+          Theobroma products or surprise your loved ones with an edible gift.</p>
+        <button>ORDER ONLINE</button>
+      </div>
+    </section>
+    <footer>
+      <div class="img1">
+        <img
+          src="assets/images/logo/theo-logo-footer_8aecafbf-62c0-4aaf-84c1-194a7f79958a.webp"
+          alt="" height="40%" width="80%"
+        />
+      </div>
+
+      <div class="aboutus">
+        <ul>
+          <li>OUR STORY</li>
+          <li>OUR PROBUCTS</li>
+          <li>SPECIALITY CAKES</li>
+          <li>BLOG</li>
+        </ul>
+      </div>
+      <div class="aboutus">
+        <ul>
+          <li>PRIVACY POLICY</li>
+          <li>COOKIE POLICY</li>
+          <li>REFUND POLICY</li>
+        </ul>
+      </div>
+      <div class="aboutus">
+        <p><i class="fa-solid fa-phone"></i> +91 8182-881881</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@bakershopcake.in</p>
+        <i class="fa-brands fa-youtube"></i
+        ><i class="fa-brands fa-instagram"></i
+        ><i class="fa-brands fa-facebook"></i>
+      </div>
+    </footer>
+  </body>
+</html>
